@@ -1,0 +1,158 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.esquerda, .direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.esquerda {
+    background: #ffffff;
+}
+
+.direita {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.icones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #cccc;
+    color: #5134aa;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icone:hover {
+    background-color: #5134aa;
+    color: white;
+}
+
+.meio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center; 
+}
+
+.inputs input {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    width: 300px; 
+}
+
+.inputs input::placeholder {
+    color: #333;
+}
+
+.esqueceu-senha {
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+.fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fim button {
+    border-radius: 10px;
+    font-weight: bold;
+    background: #5134aa;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fim button:hover {
+    background: #0c061a;
+}
+
+#btn-direita {
+    border: solid 2px white;
+    background: none;
+    color: white;
+}
+
+#btn-direita:hover {
+    background: white;
+    color: #5134aa;
+}
