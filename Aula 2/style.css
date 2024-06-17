@@ -16,7 +16,8 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.esquerda, .direita {
+.esquerda,
+.direita {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +97,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
-    align-items: center; 
+    align-items: center;
 }
 
 .inputs input {
@@ -104,7 +105,7 @@ body {
     background-color: #f0f0f0;
     border: none;
     border-radius: 10px;
-    width: 300px; 
+    width: 300px;
 }
 
 .inputs input::placeholder {
@@ -155,4 +156,31 @@ body {
 #btn-direita:hover {
     background: white;
     color: #5134aa;
+}
+.esquerda .fim a {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .direita {
+        display: none;
+    }
+
+    .esquerda {
+        width: 100%;
+    }
+
+    .inputs input {
+        width: 300px;
+    }
+
+    
+    .esquerda .fim a {
+    display: block;
+    }
+
+    .esquerda .fim {
+        display: flex;
+        gap: 10px;
+    }
 }
